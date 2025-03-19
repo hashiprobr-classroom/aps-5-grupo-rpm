@@ -1,6 +1,6 @@
 package br.edu.insper.desagil.aps5.prevgo;
 
-public abstract class Dialog extends Window {
+public abstract class   Dialog extends Window {
     private Button acceptButton;
     private Button rejectButton;
 
