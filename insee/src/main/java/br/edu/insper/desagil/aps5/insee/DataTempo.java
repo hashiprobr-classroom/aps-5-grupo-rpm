@@ -19,7 +19,7 @@ public class DataTempo extends Referencia{
 
     @Override
     public int obterValor() {
-        return data.obterValor() + tempo.obterValor();
+        return (data.obterValor()*24*60) + tempo.obterValor();
     }
 
 }
