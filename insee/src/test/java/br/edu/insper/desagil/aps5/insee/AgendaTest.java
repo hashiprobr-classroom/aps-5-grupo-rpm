@@ -20,7 +20,7 @@ public class AgendaTest {
 
     private Evento eventoFalso(boolean x){
         Evento evento = mock(Evento.class);{
-            when(evento.ehAntes()).thenReturn(x);
+            when(evento.valido()).thenReturn(x);
             return evento;
         }
 
@@ -34,7 +34,7 @@ public class AgendaTest {
 
     @Test
     public void adicionaValido(){
-        Evento e = eventoFalso(false);
+        Evento e = eventoFalso(true);
         agenda.adiciona(e);
         List<Evento> lista = new ArrayList<>();
         lista.add(e);
@@ -44,7 +44,7 @@ public class AgendaTest {
 
     @Test
     public void adicionaInvalido(){
-        Evento e = eventoFalso(true); // Evento inválido
+        Evento e = eventoFalso(false); // Evento inválido
 
         // Usa assertThrows para verificar se IllegalArgumentException é lançada
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {

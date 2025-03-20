@@ -16,12 +16,12 @@ public class Evento {
         return fim;
     }
 
-    public boolean ehAntes(){
-        if (inicio.obterValor()> fim.obterValor()){
-            return true;
+    public boolean valido(){
+        if (inicio.comoInteiro()> fim.comoInteiro()){
+            return false;
         }
         else{
-            return false;
+            return true;
         }
     }
 }

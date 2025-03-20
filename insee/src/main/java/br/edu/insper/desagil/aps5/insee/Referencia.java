@@ -15,5 +15,5 @@ public abstract class Referencia {
         this.observacao = observacao;
     }
 
-    public abstract int obterValor();
+    public abstract int comoInteiro();
 }

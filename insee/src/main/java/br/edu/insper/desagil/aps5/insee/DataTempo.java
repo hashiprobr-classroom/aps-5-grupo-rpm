@@ -18,8 +18,8 @@ public class DataTempo extends Referencia{
     }
 
     @Override
-    public int obterValor() {
-        return (data.obterValor()*24*60) + tempo.obterValor();
+    public int comoInteiro() {
+        return (data.comoInteiro()*24*60) + tempo.comoInteiro();
     }
 
 }

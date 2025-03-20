@@ -40,7 +40,7 @@ public class Tempo extends Referencia{
     }
 
     @Override
-    public int obterValor() {
+    public int comoInteiro() {
         return this.hora*60 + this.minutos;
     }
 }

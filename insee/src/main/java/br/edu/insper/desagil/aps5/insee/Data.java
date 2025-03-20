@@ -70,7 +70,7 @@ public class Data extends Referencia{
 
     }
     @Override
-    public int obterValor() {
+    public int comoInteiro() {
         int anos = this.ano - 1970;
         int meses = this.mes - 1;
         int dias = this.dia - 1;

@@ -15,7 +15,7 @@ public class Agenda {
     }
 
     public void adiciona(Evento evento){
-        if (!evento.ehAntes()){
+        if (evento.valido()){
             eventos.add(evento);
         }
         else{

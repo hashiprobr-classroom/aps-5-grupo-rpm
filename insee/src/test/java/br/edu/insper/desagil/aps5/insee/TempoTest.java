@@ -41,13 +41,13 @@ public class TempoTest {
 
     @Test
     public void comoZero(){
-        assertEquals(0, tempo.obterValor(), DELTA);
+        assertEquals(0, tempo.comoInteiro(), DELTA);
     }
 
     @Test
     public void comoAgora(){
         tempo.atualiza(15, 30);
-        assertEquals(930, tempo.obterValor(), DELTA);
+        assertEquals(930, tempo.comoInteiro(), DELTA);
     }
 
 }

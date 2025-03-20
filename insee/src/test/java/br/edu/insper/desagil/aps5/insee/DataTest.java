@@ -46,13 +46,13 @@ public class DataTest {
 
     @Test
     public void comoZero(){
-        assertEquals(0, data.obterValor(), DELTA);
+        assertEquals(0, data.comoInteiro(), DELTA);
     }
 
     @Test
     public void comoAgora(){
         data.atualiza(2024, 9, 26);
-        assertEquals(19978, data.obterValor(), DELTA);
+        assertEquals(19978, data.comoInteiro(), DELTA);
     }
 
 
